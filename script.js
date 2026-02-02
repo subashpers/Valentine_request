@@ -6,7 +6,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const question = document.getElementById("question");
 
   let scale = 1;
-  let messages = [
+  let clickedOnce = false;
+
+  const messages = [
     "Are you sure? 🥺",
     "Don’t break my heart 😢",
     "Pleaseee 💕",
@@ -15,15 +17,27 @@ document.addEventListener("DOMContentLoaded", () => {
   let msgIndex = 0;
 
   noBtn.addEventListener("click", () => {
-    scale -= 0.15;
+
+    // Change NO text once
+    if (!clickedOnce) {
+      noBtn.innerText = "you are thangoooo, don't say no 😭";
+      clickedOnce = true;
+    }
+
+    // Shrink smoothly and NEVER grow back
+    scale = Math.max(scale - 0.15, 0.25);
     noBtn.style.transform = `scale(${scale})`;
 
-    noBtn.style.animation = "shake 0.3s";
-    setTimeout(() => noBtn.style.animation = "", 300);
+    // Shake without breaking scale
+    noBtn.classList.remove("shake");
+    void noBtn.offsetWidth; // force reflow
+    noBtn.classList.add("shake");
 
+    // Change question text
     question.innerText = messages[msgIndex % messages.length];
     msgIndex++;
 
+    // Hide when very small
     if (scale <= 0.3) {
       noBtn.style.display = "none";
     }
