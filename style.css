@@ -33,3 +33,14 @@ section {
   color: #ff4d6d;
   cursor: pointer;
 }
+
+#noBtn {
+  margin-left: 15px;
+  background: #ff4d6d;
+  color: white;
+}
+
+#yesBtn {
+  background: white;
+  color: #ff4d6d;
+}
