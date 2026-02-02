@@ -4,7 +4,21 @@ body {
   background: linear-gradient(to bottom, #ff758c, #ff7eb3);
   color: white;
   text-align: center;
+  position: relative;
+  overflow-x: hidden;
 }
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: 
+    url("cat-7458522_1280.png") center / 300px repeat;
+  opacity: 0.10;          /* 👈 VERY IMPORTANT */
+  pointer-events: none;  /* so buttons still work */
+  z-index: -1;
+}
+
 
 section {
   padding: 50px 20px;
