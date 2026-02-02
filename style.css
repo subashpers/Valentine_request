@@ -83,3 +83,11 @@ section {
     opacity: 0;
   }
 }
+
+.cat-img {
+  width: 250px;
+  max-width: 80%;
+  border-radius: 20px;
+  margin: 20px auto;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
