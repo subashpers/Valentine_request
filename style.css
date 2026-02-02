@@ -29,35 +29,34 @@ section {
   font-size: 22px;
   border: none;
   border-radius: 30px;
-  background: white;
-  color: #ff4d6d;
   cursor: pointer;
 }
 
-#noBtn {
-  margin-left: 15px;
-  background: #ff4d6d;
-  color: white;
+/* Buttons container */
+.buttons {
+  margin-top: 20px;
 }
 
+/* YES button */
 #yesBtn {
   background: white;
   color: #ff4d6d;
 }
 
-.buttons {
-  margin-top: 20px;
-}
-
-/* No button styling */
+/* NO button */
 #noBtn {
   margin-left: 15px;
   background: #ff4d6d;
   color: white;
-  transition: transform 0.2s;
+  transition: transform 0.2s ease;
 }
 
-/* Shake animation */
+/* Shake class (IMPORTANT) */
+.shake {
+  animation: shake 0.3s;
+}
+
+/* Shake animation (translate ONLY) */
 @keyframes shake {
   0% { transform: translateX(0); }
   25% { transform: translateX(-5px); }
