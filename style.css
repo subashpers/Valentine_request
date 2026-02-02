@@ -13,8 +13,8 @@ body::before {
   position: fixed;
   inset: 0;
   background: 
-    url("cat-7458522_1280.png") center / 300px repeat;
-  opacity: 0.10;          /* 👈 VERY IMPORTANT */
+    url("cat-7458522_1280.png") center / 400px repeat;
+  opacity: 0.40;          /* 👈 VERY IMPORTANT */
   pointer-events: none;  /* so buttons still work */
   z-index: -1;
 }
