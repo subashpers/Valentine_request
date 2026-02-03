@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
  const coupleCats = document.getElementById("coupleCats");
 
 yesBtn.addEventListener("click", () => {
-  question.innerText = "Yayyyy! 💖💖💖, UMMAAAAAA😘😘😘";
+  question.innerText = "Yayyyy! 💖💖💖, Ummmaaaaa😘😘😘";
   result.innerHTML = "I have planned so many nice things to you, come lets enjoy the day";
 
   question.classList.add("big-love-text");
