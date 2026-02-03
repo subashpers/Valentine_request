@@ -105,3 +105,14 @@ section {
   margin: 20px auto;
 }
 
+.big-love-text {
+  font-size: 42px;
+  font-weight: bold;
+  line-height: 1.3;
+}
+
+.big-love-subtext {
+  font-size: 32px;
+  margin-top: 15px;
+}
+
