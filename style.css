@@ -116,3 +116,18 @@ section {
   margin-top: 15px;
 }
 
+.couple-cats {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 25px;
+}
+
+.couple-cats img {
+  width: 140px;
+  max-width: 40%;
+}
+
+.hidden {
+  display: none;
+}
