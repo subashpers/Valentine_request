@@ -44,8 +44,12 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   yesBtn.addEventListener("click", () => {
-    question.innerText = "Yayyyy! 💖💖💖";
-    result.innerHTML = "I can’t wait to spend Valentine’s Day with you 🥰";
+    question.innerText = "Yayyyy! 💖💖💖, UMMAAAAAA😘😘😘";
+    result.innerHTML = "I have planned so many nice things to you, come lets enjoy the day";
+
+    question.classList.add("big-love-text");
+    result.classList.add("big-love-subtext");
+    
     yesBtn.style.display = "none";
     noBtn.style.display = "none";
     createHearts();
